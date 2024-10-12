@@ -54,7 +54,7 @@ assertThat(response.jsonPath().getList("brands.brand"),hasItems("Polo","H&M","Ma
 assertEquals(response.getStatusCode(),StatusCode.SUCCESS.codes);
 assertThat(response.jsonPath().getList("brands.brand"),hasSize(34));
 }
-@Test
+@Test(priority=2)
 public void checkGetQueryParam()
 {
 HashMap <String,String> map=new HashMap <String,String> ();
