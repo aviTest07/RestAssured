@@ -78,7 +78,7 @@ System.out.println(response1.asString());
 
 SoftAssertUtil.assertsTrue(true,StatusCode.SUCCESS.message );
 }
-@Test
+@Test(priority=1)
 public void checkGetpathParam() throws IOException, ParseException, org.json.simple.parser.ParseException
 {
 String uri=PropertyFileReader.propertyReader("baseURI");
