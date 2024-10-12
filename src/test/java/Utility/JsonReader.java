@@ -35,7 +35,7 @@ public class JsonReader {
 	JSONArray jsonarray= (JSONArray)jsonobject.get(key);
 	return jsonarray;
 	 }
-	 public static Object getJSonArrayData(String key,int index) throws IOException, ParseException
+	 public static Object getJSonArrayData(String key,int indexing) throws IOException, ParseException
 	 {
 	JSONArray data= getJsonarray(key);
 	Iterator <String> itr =data.iterator();
@@ -43,7 +43,7 @@ public class JsonReader {
 	{
 	System.out.println(itr.next());
 	}
-	return  data.get(index);
+	return  data.get(indexing);
 	 }
 	 }
 
