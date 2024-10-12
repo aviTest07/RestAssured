@@ -8,7 +8,10 @@ public enum StatusCode {
 	CREATED("CREATED",201),
 	NOCONTENT("No Content",206),
 	BADREQUEST("Bad request",400),
-	UNAUTOHORIZED("Unauthorized",401);
+	UNAUTOHORIZED("Unauthorized",401),
+	FORBIDDEN("Not allowed",403),
+	NOCOntent("no content",205);
+	
 	
 	public int codes;
 	public String message;
