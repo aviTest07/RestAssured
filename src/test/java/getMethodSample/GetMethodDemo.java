@@ -123,7 +123,7 @@ SoftAssertUtil.assertsTrue(true,StatusCode.SUCCESS.message );
 
 
 }
-@Test
+@Test(priority=0)
 public void checkPostmethod()
 {
 RestAssured.baseURI=  "https://rahulshettyacademy.com";
